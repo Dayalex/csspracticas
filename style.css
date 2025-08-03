@@ -1,0 +1,150 @@
+*{
+    line-height: 1.6;
+    color: rgb(46, 235, 162);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior:smooth;   
+}
+:root{
+    --color-primary:#5C7E8F;
+    --color-secondary: #293C7C;
+    --color-accent:#024944;
+    --color-backgroud:white;
+    
+
+
+}
+body{
+    background-color: var(--color-backgroud);
+    color: var(--color-primary);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--color-secondary);
+    position: relative;
+}
+
+nav a{
+    content: ¨¨;
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-primary);
+    bottom: 2px;
+    transition: width 0.3s ease;
+}
+nav a:hover::after{
+    width: 100%;
+}
+section[relo=¨dialogo¨]{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    max-width: 300px;
+    border-radius: 16px;
+    box-shadow: inset;
+}
+
+
+h5{
+    font-size: 1.8rem;
+    color: var(--color-backgroud);
+    padding-left: 1rem;
+    border-left: 4px solid var(--color-backgroud);
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    margin-top: 0.5rem;
+}
+span {
+    display: block;
+    font-weight: 500;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li{
+    margin-bottom: 0.3rem;
+}
+
+a[download]{
+    display: inline-block;
+    background-color: #5C7E8F;
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: backgroud-color 0.3 ease;
+}
+
+a[download]:hover {
+    background-color: dimgray;
+
+}
+#proyectos > div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-backgroud);
+    padding: 1rem;
+    border-radius: 16px;
+    align-items: center;
+    box-shadow: 0 20px 10px rgb(46, 235, 162);
+}
+#experiencias > div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-backgroud);
+    padding: 1rem;
+    border-radius: 16px;
+    align-items: center;
+    box-shadow: 0 20px 10px rgb(46, 235, 162);
+}
+datalist{
+    margin: 1rem;
+    border-left: 4px solid var(--color-primary);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+    border-top: 2px solid var(--color-primary);
+
+}
+
+footer h4{
+    font-weight: normal;
+    color: var(--color-primary);
+    margin-bottom: 0.9rem;
+}
